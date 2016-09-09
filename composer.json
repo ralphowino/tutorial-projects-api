@@ -16,7 +16,8 @@
         "phpunit/phpunit": "~5.0",
         "symfony/css-selector": "3.1.*",
         "symfony/dom-crawler": "3.1.*",
-        "barryvdh/laravel-ide-helper": "^2.2"
+        "barryvdh/laravel-ide-helper": "^2.2",
+        "ralphowino/restful-api-helper": "1.0.x-dev"
     },
     "autoload": {
         "classmap": [

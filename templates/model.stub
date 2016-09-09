@@ -1,0 +1,24 @@
+<?php
+
+namespace DummyNamespace;
+
+DummyArchiveUse
+DummyBaseClassImport
+class DummyClass extends DummyBaseClass
+{
+    DummyArchive
+    /**
+     * The model's table
+     *
+     * @var string
+     */
+    protected $table = 'DummyTable';
+
+    /**
+     * This are the mass assignable fields for the model
+     *
+     * @var array
+     */
+    protected $fillable = [DummyFillableFields];
+    DummyRelationships
+}

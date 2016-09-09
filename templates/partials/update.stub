@@ -1,0 +1,14 @@
+
+    /**
+     * Update the specified resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function update(Request $request, $id)
+    {
+        // TODO: Validate the input
+        $item = $this->repository->update($id, $request);
+        return $this->response()->item($item, $this->transformer);
+    }

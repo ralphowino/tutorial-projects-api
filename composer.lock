@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "0e6296eedace558f45300888796521ea",
-    "content-hash": "901faa9e04ac955a80356b89c2bca346",
+    "hash": "d2a7353227e1cdb9820495ea81735da5",
+    "content-hash": "c2c5fdc49d24427d10cd538b8b2c1bba",
     "packages": [
         {
             "name": "barryvdh/laravel-cors",
@@ -2793,6 +2793,154 @@
             "time": "2016-09-06 16:07:05"
         },
         {
+            "name": "namshi/jose",
+            "version": "5.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/namshi/jose.git",
+                "reference": "8c7eba486f74c014ea1d8faedafe5109a31ea95b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/namshi/jose/zipball/8c7eba486f74c014ea1d8faedafe5109a31ea95b",
+                "reference": "8c7eba486f74c014ea1d8faedafe5109a31ea95b",
+                "shasum": ""
+            },
+            "require": {
+                "lib-openssl": "*",
+                "php": ">=5.3.3",
+                "phpseclib/phpseclib": "~0.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.5",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Namshi\\JOSE": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alessandro Nadalin",
+                    "email": "alessandro.nadalin@gmail.com"
+                }
+            ],
+            "description": "JSON Object Signing and Encryption library for PHP.",
+            "keywords": [
+                "JSON Web Signature",
+                "JSON Web Token",
+                "JWS",
+                "json",
+                "jwt",
+                "token"
+            ],
+            "time": "2015-06-29 05:41:44"
+        },
+        {
+            "name": "phpseclib/phpseclib",
+            "version": "0.3.10",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/phpseclib/phpseclib.git",
+                "reference": "d15bba1edcc7c89e09cc74c5d961317a8b947bf4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d15bba1edcc7c89e09cc74c5d961317a8b947bf4",
+                "reference": "d15bba1edcc7c89e09cc74c5d961317a8b947bf4",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.0.0"
+            },
+            "require-dev": {
+                "phing/phing": "~2.7",
+                "phpunit/phpunit": "~4.0",
+                "sami/sami": "~2.0",
+                "squizlabs/php_codesniffer": "~1.5"
+            },
+            "suggest": {
+                "ext-gmp": "Install the GMP (GNU Multiple Precision) extension in order to speed up arbitrary precision integer arithmetic operations.",
+                "ext-mcrypt": "Install the Mcrypt extension in order to speed up a wide variety of cryptographic operations.",
+                "pear-pear/PHP_Compat": "Install PHP_Compat to get phpseclib working on PHP < 4.3.3."
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "0.3-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Crypt": "phpseclib/",
+                    "File": "phpseclib/",
+                    "Math": "phpseclib/",
+                    "Net": "phpseclib/",
+                    "System": "phpseclib/"
+                },
+                "files": [
+                    "phpseclib/Crypt/Random.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "include-path": [
+                "phpseclib/"
+            ],
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jim Wigginton",
+                    "email": "terrafrost@php.net",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Patrick Monnerat",
+                    "email": "pm@datasphere.ch",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Andreas Fischer",
+                    "email": "bantu@phpbb.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Hans-Jürgen Petrich",
+                    "email": "petrich@tronic-media.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "PHP Secure Communications Library - Pure-PHP implementations of RSA, AES, SSH2, SFTP, X.509 etc.",
+            "homepage": "http://phpseclib.sourceforge.net",
+            "keywords": [
+                "BigInteger",
+                "aes",
+                "asn.1",
+                "asn1",
+                "blowfish",
+                "crypto",
+                "cryptography",
+                "encryption",
+                "rsa",
+                "security",
+                "sftp",
+                "signature",
+                "signing",
+                "ssh",
+                "twofish",
+                "x.509",
+                "x509"
+            ],
+            "time": "2015-01-28 21:50:33"
+        },
+        {
             "name": "phpspec/prophecy",
             "version": "v1.6.1",
             "source": {
@@ -3234,6 +3382,58 @@
                 "xunit"
             ],
             "time": "2016-09-06 16:07:45"
+        },
+        {
+            "name": "ralphowino/restful-api-helper",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ralphowino/restful-api-helper.git",
+                "reference": "c83cd6918639a93060445f9dc2c31cf8d04a1737"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ralphowino/restful-api-helper/zipball/c83cd6918639a93060445f9dc2c31cf8d04a1737",
+                "reference": "c83cd6918639a93060445f9dc2c31cf8d04a1737",
+                "shasum": ""
+            },
+            "require": {
+                "barryvdh/laravel-cors": "*",
+                "dingo/api": "1.0.*@dev",
+                "php": ">=5.4.0",
+                "tymon/jwt-auth": "0.5.*"
+            },
+            "require-dev": {
+                "phpspec/phpspec": "~2.1"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Ralphowino\\ApiStarter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Samuel Kubai",
+                    "email": "sam@ralphowino.com"
+                }
+            ],
+            "description": "This is a starter package for a laravel api using JWT authentication and the Dingo api package",
+            "keywords": [
+                "api",
+                "laravel",
+                "starter"
+            ],
+            "time": "2016-08-30 06:33:25"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3961,12 +4161,76 @@
             "description": "Symfony Yaml Component",
             "homepage": "https://symfony.com",
             "time": "2016-09-02 02:12:52"
+        },
+        {
+            "name": "tymon/jwt-auth",
+            "version": "0.5.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/tymondesigns/jwt-auth.git",
+                "reference": "18b2add90de2315d549664b4d4a062db07e8b080"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/tymondesigns/jwt-auth/zipball/18b2add90de2315d549664b4d4a062db07e8b080",
+                "reference": "18b2add90de2315d549664b4d4a062db07e8b080",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/http": "~5.0",
+                "illuminate/support": "~5.0",
+                "namshi/jose": "5.0.*",
+                "nesbot/carbon": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/auth": "~5.0",
+                "illuminate/console": "~5.0",
+                "illuminate/database": "~5.0",
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "4.*"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.5-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Tymon\\JWTAuth\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sean Tymon",
+                    "email": "tymon148@gmail.com",
+                    "homepage": "http://tymondesigns.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSON Web Token Authentication for Laravel 4 and 5",
+            "homepage": "https://github.com/tymondesigns/jwt-auth",
+            "keywords": [
+                "Authentication",
+                "JSON Web Token",
+                "auth",
+                "jwt",
+                "laravel",
+                "tymon"
+            ],
+            "time": "2016-02-18 09:22:36"
         }
     ],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "dingo/api": 20
+        "dingo/api": 20,
+        "ralphowino/restful-api-helper": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

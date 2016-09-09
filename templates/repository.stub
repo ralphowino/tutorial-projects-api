@@ -1,0 +1,28 @@
+<?php
+
+namespace DummyNamespace;
+
+use DummyModelNamespace\DummyModel;
+use Ralphowino\ApiStarter\Resources\ResourcefulRepositoryTrait;
+DummyBaseClassImport
+class DummyRepository extends DummyBaseClass
+{
+    use ResourcefulRepositoryTrait;
+
+    /**
+     * This is the repository's model
+     *
+     * @var DummyModel
+     */
+    protected $model;
+
+    /**
+     * DummyRepository constructor
+
+     * @param DummyModel $DummyModelCamel
+     */
+    function __construct(DummyModel $DummyModelCamel)
+    {
+        $this->model = $DummyModelCamel;
+    }
+}
