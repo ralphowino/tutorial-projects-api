@@ -168,6 +168,7 @@ return [
          */
 
         Dingo\Api\Provider\LaravelServiceProvider::class,
+        Barryvdh\Cors\ServiceProvider::class,
 
         /*
          * Application Service Providers...
