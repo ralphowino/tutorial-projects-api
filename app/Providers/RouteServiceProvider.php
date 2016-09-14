@@ -68,12 +68,12 @@ class RouteServiceProvider extends ServiceProvider
      */
     protected function mapApiRoutes()
     {
-        Route::group([
-            'middleware' => 'api',
-            'namespace' => $this->namespace,
-            'prefix' => 'api',
-        ], function ($router) {
-            require base_path('routes/api.php');
+        $api = app('Dingo\Api\Routing\Router');
+
+        $api->version('v1', function ($api) {
+            $api->group(['namespace' => $this->namespace . '\Api'], function ($api) {
+                require base_path('routes/api.php');
+            });
         });
     }
 }
