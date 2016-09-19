@@ -2,8 +2,8 @@
 
 namespace App\Data\Models;
 
-use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 
 class User extends Authenticatable
 {
@@ -26,4 +26,15 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+
+    public function teams()
+    {
+        return $this->belongsToMany(Team::class, 'team_members');
+    }
+
+    public function getActiveTeamAttribute()
+    {
+        return \Session::get('tenant');
+    }
 }
